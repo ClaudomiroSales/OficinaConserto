@@ -6,8 +6,12 @@ using std::cout;
 SmartTVGame::SmartTVGame( int tamanho, int voltagem,  string nome, string mode )
 : TV( tamanho, voltagem,  nome )
 {
+    selectMode( mode );      
+}
+
+SmartTVGame::~SmartTVGame()
+{
     
-      
 }
 
 void SmartTVGame::selectMode( string mode )
@@ -34,6 +38,12 @@ void SmartTVGame::ligar( )
 
 void SmartTVGame::desligar( )
 {
+    setLigado( false );
+    this->canal = 3;
+    this->volume = 30;
+    mode = "normalTV";
+    resolution = "4k"; 
+    fps = 20; 
 
 }
 
