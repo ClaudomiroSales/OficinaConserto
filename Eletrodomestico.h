@@ -10,7 +10,7 @@ public:
     Eletrodomestico( bool, int,  string );
     virtual ~Eletrodomestico();
     virtual void ligar( ) = 0;
-    virtual void ligar( ) = 0;
+    virtual void desligar( ) = 0;
     void setLigado( bool ligado = false ) { this->ligado = ligado; }
     bool isLigado( ) { return this->ligado; }
     int getVoltagem( ) { return this->voltagem; }
