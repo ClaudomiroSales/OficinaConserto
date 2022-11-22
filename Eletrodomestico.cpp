@@ -12,6 +12,11 @@ Eletrodomestico::Eletrodomestico( bool ligado, int voltagem,  string nome )
 
 }
 
+Eletrodomestico::~Eletrodomestico()
+{
+    
+}
+
 void Eletrodomestico::printInformations( )
 {
     cout << "Nome: " << this->nome << "\n";
