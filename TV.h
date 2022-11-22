@@ -8,6 +8,8 @@ class TV : public Eletrodomestico
 public:
     TV( int, int,  string );
     virtual ~TV();
+    //virtual void ligar( );
+    //virtual void desligar( );
     //virtual void selectMode( string ) = 0;
     virtual void printInformations( );
 protected:

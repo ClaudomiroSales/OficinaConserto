@@ -11,6 +11,26 @@ TV::TV( int tamanho, int voltagem,  string nome )
     volume = 0;
 }
 
+TV::~TV()
+{
+
+}
+/*
+void TV::ligar( )
+{
+    setLigado( true );
+    this->canal = 3;
+    this->volume = 30;   
+}
+
+void TV::desligar( )
+{
+    setLigado( false );
+    this->canal = 3;
+    this->volume = 30;    
+}
+*/
+
 void TV::printInformations( )
 {
     Eletrodomestico::printInformations( );
