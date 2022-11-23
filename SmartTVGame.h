@@ -7,6 +7,7 @@ class SmartTVGame : public TV
 {
 public:
     SmartTVGame( int, int,  string, string = "levelGameSuperior" );
+    SmartTVGame( const SmartTVGame & );
     ~SmartTVGame();
     void ligar( );
     void desligar( );

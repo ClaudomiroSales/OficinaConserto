@@ -9,6 +9,14 @@ SmartTVGame::SmartTVGame( int tamanho, int voltagem,  string nome, string mode )
     selectMode( mode );      
 }
 
+SmartTVGame::SmartTVGame( const SmartTVGame &smarty )
+: TV( smarty )
+{
+    this->mode = smarty.mode;
+    this->resolution = smarty.resolution; 
+    this->fps = smarty.fps;  
+}
+
 SmartTVGame::~SmartTVGame()
 {
     

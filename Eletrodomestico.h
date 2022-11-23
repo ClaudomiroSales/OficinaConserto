@@ -8,6 +8,7 @@ class Eletrodomestico
 {
 public:
     Eletrodomestico( bool, int,  string );
+    Eletrodomestico( const Eletrodomestico & );
     virtual ~Eletrodomestico();
     virtual void ligar( ) = 0;
     virtual void desligar( ) = 0;

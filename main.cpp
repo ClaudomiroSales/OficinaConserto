@@ -16,12 +16,13 @@ void avaliarAparelho( Eletrodomestico *);
 
 int main(int argc, char **argv)
 {
-    SmartTVGame *ptr = new SmartTVGame( 29, 110, "TV OLED");
+    SmartTVGame *ptr = new SmartTVGame( 55, 110, "TV microLED");
     
 	vector< Eletrodomestico * > eletros;
 
     eletros.push_back( new SmartTVGame( 29, 110, "TV OLED") );
-	
+	eletros.push_back( new SmartTVGame( *ptr ) );
+
     for( Eletrodomestico *eletro : eletros )
         avaliarAparelho( eletro );
 	

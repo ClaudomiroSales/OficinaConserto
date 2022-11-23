@@ -11,6 +11,14 @@ TV::TV( int tamanho, int voltagem,  string nome )
     volume = 0;
 }
 
+TV::TV( const TV &tvOut )
+: Eletrodomestico( tvOut )
+{
+    this->tamanho = tvOut.tamanho;
+    this->canal = tvOut.canal;
+    this->volume = tvOut.volume;
+}
+
 TV::~TV()
 {
 

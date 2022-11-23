@@ -7,6 +7,7 @@ class TV : public Eletrodomestico
 {
 public:
     TV( int, int,  string );
+    TV( const TV & );
     virtual ~TV();
     //virtual void ligar( );
     //virtual void desligar( );

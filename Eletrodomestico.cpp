@@ -12,6 +12,12 @@ Eletrodomestico::Eletrodomestico( bool ligado, int voltagem,  string nome )
 
 }
 
+Eletrodomestico::Eletrodomestico( const Eletrodomestico & eletroOut )
+: ligado(eletroOut.ligado), voltagem(eletroOut.voltagem), nome(eletroOut.nome)
+{
+
+}
+
 Eletrodomestico::~Eletrodomestico()
 {
     
